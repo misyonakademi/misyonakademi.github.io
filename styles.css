@@ -17,35 +17,6 @@
   --radius-sm: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0d1117;
-    --bg-strong: #010409;
-    --surface: rgba(22, 27, 34, 0.85);
-    --surface-strong: #161b22;
-    --text: #f0f6fc;
-    --muted: #8b949e;
-    --line: rgba(240, 246, 252, 0.1);
-    --shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
-  }
-  
-  body {
-    background: 
-      radial-gradient(circle at top left, rgba(240, 111, 61, 0.1), transparent 35%),
-      linear-gradient(180deg, #0d1117 0%, #010409 100%);
-  }
-
-  .hero {
-    background: linear-gradient(135deg, rgba(22, 27, 34, 0.9), rgba(13, 17, 23, 0.8));
-    border-color: rgba(240, 246, 252, 0.05);
-  }
-
-  .floating-note {
-    background: rgba(48, 54, 61, 0.95);
-    color: var(--white);
-  }
-}
-
 /* Reveal Animations */
 .reveal-hidden {
   opacity: 0;
@@ -544,8 +515,32 @@ main {
 
 .bottom-banner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(145deg, #1d3655, #111b2d);
+  color: var(--white);
+}
+
+.banner-copy h2 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  margin: 16px 0;
+  line-height: 1.1;
+}
+
+.banner-copy .subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+.banner-cta .cta.primary {
+  font-size: 1.2rem;
+  padding: 18px 36px;
+  box-shadow: 0 20px 40px rgba(53, 88, 255, 0.3);
 }
 
 .site-footer {
@@ -590,6 +585,29 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  animation: scrollUp 20s linear infinite;
+}
+
+.carousel-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.screenshot-carousel {
+  margin-top: 20px;
+  height: 380px; /* Limit height to show only part of the track */
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-links-grid {
