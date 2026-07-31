@@ -3,656 +3,854 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Misyon Akademi | Hazırlığı Net Bir Sisteme Dönüştür</title>
-    <meta
-      name="description"
-      content="Misyon Akademi ile komiserlik ve misyon koruma sınavlarına dağılmadan hazırlan. Güncel testler, konu bazlı akış, yanlış tekrar alanı ve performans analizi tek platformda."
-    />
+    <title>Misyon Akademi | Komiserlik ve Misyon Koruma Sınav Hazırlık Uygulaması</title>
+    <meta name="description" content="Misyon Akademi ile komiserlik ve misyon koruma sınavlarına dağılmadan hazırlan. 9.000+ güncel soru, konu bazlı akış, yanlış tekrar alanı, deneme sınavları ve performans analizi tek platformda." />
+    <meta name="keywords" content="komiserlik sınavı, misyon koruma, paem, sınav hazırlık, polis sınavı, misyon akademi" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Misyon Akademi | Hazırlığı Net Bir Sisteme Dönüştür"
-    />
-    <meta
-      property="og:description"
-      content="Güncel testler, konu bazlı ilerleme ve düzenli tekrar sistemiyle sınav hazırlığını tek uygulamada yönet."
-    />
+    <meta property="og:title" content="Misyon Akademi | Komiserlik ve Misyon Koruma Hazırlık" />
+    <meta property="og:description" content="9.000+ güncel soru, konu bazlı akış, deneme sınavları ve performans analizi tek platformda." />
+    <meta property="og:image" content="./assets/icons/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./assets/icons/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="top" aria-hidden="true"></div>
-    <div class="page-noise" aria-hidden="true"></div>
-    <div class="page-gradient" aria-hidden="true"></div>
 
-    <div class="page-shell">
-      <header class="site-header reveal">
+    <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
         <a class="brand" href="#top" aria-label="Misyon Akademi ana sayfa">
-          <span class="brand-mark">MA</span>
-          <span class="brand-copy">
+          <img src="./assets/icons/logo.png" alt="Misyon Akademi Logo" class="brand-logo" />
+          <span class="brand-text">
             <strong>Misyon Akademi</strong>
-            <small>Komiserlik ve Misyon Koruma Hazırlık Platformu</small>
+            <small>Komiserlik &amp; Misyon Koruma</small>
           </span>
         </a>
-
         <nav class="main-nav" aria-label="Ana menü">
-          <a href="#neden">Neden Biz</a>
-          <a href="#akis">Sistem</a>
-          <a href="#ekranlar">Ekranlar</a>
+          <a href="#ozellikler">Özellikler</a>
+          <a href="#dersler">Dersler</a>
           <a href="#premium">Premium</a>
           <a href="#sss">SSS</a>
-          <a class="nav-highlight" href="#indir">İndir</a>
+          <a href="#indir" class="nav-cta">Ücretsiz İndir</a>
         </nav>
-      </header>
+        <button class="hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#ozellikler" class="mobile-link">Özellikler</a>
+        <a href="#dersler" class="mobile-link">Dersler</a>
+        <a href="#premium" class="mobile-link">Premium</a>
+        <a href="#sss" class="mobile-link">SSS</a>
+        <a href="#indir" class="mobile-link mobile-cta">Ücretsiz İndir</a>
+      </div>
+    </header>
 
-      <main>
-        <section class="hero reveal">
-          <div class="hero-copy">
-            <p class="section-tag">Güven Öncelikli Açılış</p>
-            <h1>Hazırlığı dağınık bir süreçten çıkar, disiplinli bir çalışma sistemine dönüştür.</h1>
+    <main>
+
+      <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+      <section class="hero" id="top">
+        <div class="hero-bg">
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-inner">
+          <div class="hero-copy animate-up">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              iOS &amp; Android'de Yayında
+            </div>
+            <h1>Hazırlığını <span class="text-gold">sistematik</span> ve <span class="text-gold">ölçülebilir</span> hale getir.</h1>
             <p class="hero-lead">
-              Misyon Akademi; güncel hukuk testleri, konu bazlı premium akış,
-              yanlış soru tekrar alanı, sınav geçmişi ve net performans analizi ile
-              her gün ne çalışacağını daha hızlı görmeni sağlar.
+              Misyon Akademi; <strong>9.000+ güncel soru</strong>, konu bazlı çalışma akışı,
+              yanlış soru tekrar havuzu, deneme sınavları, sınav geçmişi ve anlık performans
+              analizi ile her gün ne çalışacağını net bir şekilde gösterir.
             </p>
-
+            <div class="hero-stats">
+              <div class="stat-item">
+                <strong>9.000+</strong>
+                <span>Güncel soru</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <strong>10+</strong>
+                <span>Ders kategorisi</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <strong>%83</strong>
+                <span>Yıllık tasarruf</span>
+              </div>
+            </div>
             <div class="hero-actions" id="indir">
-              <a
-                class="button button-primary button-store"
-                href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img class="button-icon" src="./assets/icons/apple-store-icon.svg" alt="" aria-hidden="true" />
+              <a class="btn btn-primary btn-store" href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055" target="_blank" rel="noreferrer" id="btn-appstore">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 App Store'dan İndir
               </a>
-              <a
-                class="button button-secondary button-store"
-                href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&amp;hl=tr"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img class="button-icon" src="./assets/icons/google-play-icon.svg" alt="" aria-hidden="true" />
+              <a class="btn btn-secondary btn-store" href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&hl=tr" target="_blank" rel="noreferrer" id="btn-playstore">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3,20.5v-17c0-0.83,0.94-1.3,1.6-0.8l14,8.5c0.6,0.36,0.6,1.24,0,1.6l-14,8.5C3.94,21.8,3,21.33,3,20.5z"/></svg>
                 Google Play'den İndir
               </a>
             </div>
-
-            <a class="hero-link" href="#premium">Premium planları karşılaştır</a>
-
-            <div class="micro-points" aria-label="Öne çıkan avantajlar">
-              <span>Ücretsiz başlangıç ve hızlı kurulum</span>
-              <span>iPhone ve Android'de yayında</span>
-            </div>
-
-            <div class="metric-band">
-              <article>
-                <strong>4.000+</strong>
-                <span>Güncel soru ve tekrar havuzu</span>
-              </article>
-              <article>
-                <strong>Konu bazlı</strong>
-                <span>Rastgele değil, planlı ilerleme</span>
-              </article>
-              <article>
-                <strong>Anlık analiz</strong>
-                <span>Doğru, yanlış, boş ve süre takibi</span>
-              </article>
+            <p class="hero-note">✓ Her gün 20 soru ücretsiz &nbsp;·&nbsp; ✓ Kayıt gerektirmez &nbsp;·&nbsp; ✓ iPhone &amp; Android</p>
+          </div>
+          <div class="hero-visual animate-up animate-delay-1">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="screen-header">
+                    <div class="screen-time">Misyon Akademi</div>
+                    <div class="screen-icon">🎯</div>
+                  </div>
+                  <div class="screen-content screen-content-img">
+                    <img src="./assets/screenshots/screenshot_5.png" alt="Misyon Akademi Ana Ekran" class="real-screenshot-img" />
+                  </div>
+                </div>
+              </div>
+              <div class="phone-glow"></div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="hero-stage" aria-label="Uygulama tanıtım alanı">
-            <div class="screenshot-window screenshot-window-hero" aria-label="Misyon Akademi ekran görüntüleri">
-              <div class="screenshot-track">
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_1.png" alt="Misyon Akademi sonuç ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_2.png" alt="Misyon Akademi soru çözüm ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_3.png" alt="Misyon Akademi analiz ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_4.png" alt="Misyon Akademi konu akışı ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_5.png" alt="Misyon Akademi ana ekranı" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_1.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_2.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_3.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_4.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_5.png" alt="" />
-                </figure>
-              </div>
+      <!-- ═══════════════════════════ SOCIAL PROOF BAR ═══════════════════════════ -->
+      <section class="social-proof">
+        <div class="container proof-inner">
+          <div class="proof-item">
+            <img src="./assets/icons/apple-store-icon.svg" alt="App Store" class="store-badge-sm" onerror="this.style.display='none'" />
+            <div>
+              <strong>App Store</strong>
+              <span>iOS Uygulaması</span>
             </div>
           </div>
-        </section>
-
-        <section class="proof-strip reveal" aria-label="Otorite ve güven alanı">
-          <div>
-            <p class="section-tag">Güven ve Otorite</p>
-            <h2>Hazırlığa başlamak için önce daha net bir çalışma düzeni gerekir.</h2>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <img src="./assets/icons/google-play-icon.svg" alt="Google Play" class="store-badge-sm" onerror="this.style.display='none'" />
+            <div>
+              <strong>Google Play</strong>
+              <span>Android Uygulaması</span>
+            </div>
           </div>
-          <div class="proof-list">
-            <article>
-              <strong>Ücretsiz başlangıç</strong>
-              <span>İlk temas sürtünmesiz ve anlaşılır kalır.</span>
-            </article>
-            <article>
-              <strong>Konu bazlı derinlik</strong>
-              <span>Premium içerik çalışma planını bölmeden genişler.</span>
-            </article>
-            <article>
-              <strong>Veriye dayalı tekrar</strong>
-              <span>Ne çalışacağını tahmin etmez, sonuçlardan görürsün.</span>
-            </article>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <div class="proof-emoji">🏆</div>
+            <div>
+              <strong>9.000+ Soru</strong>
+              <span>Güncel &amp; Kategorize</span>
+            </div>
           </div>
-        </section>
-
-        <section class="section-block reveal" id="neden">
-          <div class="section-head section-head-expanded">
-            <p class="section-tag">Sorun / Çözüm</p>
-            <h2>İyi bir hazırlık yalnızca soru göstermez; seni her gün yeniden çalıştırır.</h2>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <div class="proof-emoji">📊</div>
+            <div>
+              <strong>Anlık Analiz</strong>
+              <span>Kişisel Performans</span>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="editorial-grid">
-            <article class="editorial-panel editorial-panel-dark">
-              <p class="panel-kicker">Dağınık Süreç</p>
-              <ul class="feature-list">
-                <li>Nereden başlanacağı net değildir.</li>
-                <li>Yanlış sorular kısa sürede kaybolur.</li>
-                <li>Çalışma günü plansız ilerler.</li>
-                <li>Gelişim hissi ölçülemez kalır.</li>
-              </ul>
-            </article>
-
-            <article class="editorial-panel editorial-panel-light">
-              <p class="panel-kicker">Misyon Sistemi</p>
-              <ul class="feature-list">
-                <li>Genel testlerle anında giriş yapılır.</li>
-                <li>Premium akışla konu konu derinleşilir.</li>
-                <li>Yanlış soru alanı tekrar düzenini korur.</li>
-                <li>Analiz ekranı ilerlemeyi somutlaştırır.</li>
-              </ul>
-            </article>
+      <!-- ═══════════════════════════ ÖZELLİKLER ═══════════════════════════ -->
+      <section class="features" id="ozellikler">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Neden Misyon Akademi?</span>
+            <h2>Dağınık değil, <span class="text-gold">disiplinli</span> çalış</h2>
+            <p>Rastgele soru çözmek yetmez. Sistematik, ölçülebilir ve sürdürülebilir bir hazırlık platformu.</p>
           </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <span class="feature-index">01</span>
-              <h3>İlk gün boş ekran hissi yok</h3>
-              <p>
-                Kullanıcı uygulamayı açtığı anda ne yapacağını düşünmek yerine
-                doğrudan çalışmaya başlayabilir.
-              </p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">02</span>
-              <h3>Konu konu ilerleme hissi güçlü</h3>
-              <p>
-                İçerik akışı rastgele değil; daha güven veren, daha düzenli bir
-                çalışma sırası sunar.
-              </p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">03</span>
-              <h3>Performans görünür kalır</h3>
-              <p>
-                Doğru, yanlış, boş ve süre metrikleri çalışmanın kalitesini daha
-                okunur hale getirir.
-              </p>
-            </article>
-            <article class="feature-card">
-              <span class="feature-index">04</span>
-              <h3>Tekrar kararını sistem verir</h3>
-              <p>
-                Eksikler unutulmasın diye yanlış soru alanı sürekli görünür bir
-                çalışma hafızası gibi çalışır.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section-block reveal" id="akis">
-          <div class="section-head section-head-wide">
-            <p class="section-tag">Anlatı Odaklı Akış</p>
-            <h2>Başla, derinleş, tekrar et. Bütün sistem bu kadar net.</h2>
-            <p>
-              Sayfa akışı hero + güven + sistem anlatısı üzerine kuruldu. Bu yüzden
-              ziyaretçi tek bir vaat değil, tutarlı ve uygulanabilir bir çalışma
-              yöntemi görüyor.
-            </p>
-          </div>
-
-          <div class="timeline-grid">
-            <article class="timeline-card">
-              <span>01</span>
-              <div>
-                <strong>Hızlı başlangıç</strong>
-                <p>Genel testler sayesinde kullanıcı birkaç saniye içinde sisteme girer.</p>
+          <div class="features-grid">
+            <div class="feature-card animate-up">
+              <div class="feature-icon-wrap navy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
               </div>
-            </article>
-            <article class="timeline-card">
-              <span>02</span>
-              <div>
-                <strong>Konu derinliği</strong>
-                <p>Premium testler ile eksik alanlar daha kontrollü şekilde kapanır.</p>
+              <h3>Konu Bazlı Akış</h3>
+              <p>Her ders kendi kategorisinde. Rastgele değil, konu sırasıyla ilerle. Güçlü ve zayıf olduğun alanları anında gör.</p>
+            </div>
+            <div class="feature-card animate-up animate-delay-1">
+              <div class="feature-icon-wrap gold">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
               </div>
-            </article>
-            <article class="timeline-card">
-              <span>03</span>
-              <div>
-                <strong>Analiz ve tekrar</strong>
-                <p>Yeni gün planı, hisle değil sonuçlarla şekillenir.</p>
+              <h3>Anlık Performans Analizi</h3>
+              <p>Doğru, yanlış, boş ve süre takibi. Hangi derste ne kadar iyi olduğunu grafik ve istatistiklerle gör.</p>
+            </div>
+            <div class="feature-card animate-up animate-delay-2">
+              <div class="feature-icon-wrap purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
-            </article>
+              <h3>Yanlış Soru Tekrar Havuzu</h3>
+              <p>Yanlış yaptığın sorular havuza eklenir. Tekrar tekrar çözerek kalıcı öğrenme sağla ve sınavda aynı hatayı yapma.</p>
+            </div>
+            <div class="feature-card animate-up">
+              <div class="feature-icon-wrap green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3>Deneme Sınavları</h3>
+              <p>Gerçek sınav formatında deneme sınavları. Zaman baskısı altında çalış ve sınav gününe hazır hissettir.</p>
+            </div>
+            <div class="feature-card animate-up animate-delay-1">
+              <div class="feature-icon-wrap orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 6v4l3 3"/></svg>
+              </div>
+              <h3>Sınav Geçmişi</h3>
+              <p>Tüm çözüm geçmişini incele. Hangi tarihte hangi sınavı çözdüğünü, ne kadar süre harcadığını takip et.</p>
+            </div>
+            <div class="feature-card animate-up animate-delay-2">
+              <div class="feature-icon-wrap teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <h3>Rozetler &amp; Liderlik</h3>
+              <p>Başarılarını rozetlerle kutla. Liderlik tablosunda sırana bak. Rekabetçi motivasyonla çalışma disiplinini koru.</p>
+            </div>
+            <div class="feature-card animate-up">
+              <div class="feature-icon-wrap blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3>Flash Card Çalışması</h3>
+              <p>Kart sistemiyle hızlı tekrar yap. Ders notlarını ve kilit kavramları flash card formatında ezberle.</p>
+            </div>
+            <div class="feature-card animate-up animate-delay-1">
+              <div class="feature-icon-wrap pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <h3>Bildirim &amp; Hatırlatma</h3>
+              <p>Günlük çalışma hatırlatmaları ile rutinini koru. Önemli güncellemelerden anında haberdar ol.</p>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section-block reveal" id="ekranlar">
-          <div class="section-head">
-            <p class="section-tag">Ürün Vitrini</p>
-            <h2>Ürünü yalnızca anlatmayan, doğrudan gösteren bir vitrin kurgusu.</h2>
+      <!-- ═══════════════════════════ DERSLER ═══════════════════════════ -->
+      <section class="subjects" id="dersler">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Kapsam</span>
+            <h2>Sınav kapsamındaki <span class="text-gold">tüm dersler</span></h2>
+            <p>Komiserlik ve Misyon Koruma sınavının tüm ders kategorileri tek platformda.</p>
           </div>
-
-          <div class="showcase-grid">
-            <article class="showcase-copy">
-              <p>
-                Gerçek ekran görüntüleri, sayfaya güven kazandırır. Bu yüzden ana
-                tanıtım alanında sonuç ekranı, konu akışı ve analiz görünümünü
-                birlikte gösteriyoruz.
-              </p>
-              <ul class="feature-list">
-                <li>Gerçek ürün ekranlarıyla daha hızlı güven oluşur.</li>
-                <li>Mobil kullanım hissi masaüstünde de net şekilde aktarılır.</li>
-                <li>CTA’lar ürün anlatısının içine doğal olarak yerleşir.</li>
-              </ul>
-              <a
-                class="button button-secondary button-store"
-                href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img class="button-icon" src="./assets/icons/apple-store-icon.svg" alt="" aria-hidden="true" />
-                App Store'a Git
-              </a>
-            </article>
-
-            <div class="screenshot-window screenshot-window-showcase" aria-label="Kayan ekran görüntüsü vitrini">
-              <div class="screenshot-track screenshot-track-slower">
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_2.png" alt="Misyon Akademi soru çözüm ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_5.png" alt="Misyon Akademi ana ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_3.png" alt="Misyon Akademi detay analiz ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_1.png" alt="Misyon Akademi sonuç ekranı" />
-                </figure>
-                <figure class="screenshot-card">
-                  <img src="./assets/screenshots/screenshot_4.png" alt="Misyon Akademi konu akışı ekranı" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_2.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_5.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_3.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_1.png" alt="" />
-                </figure>
-                <figure class="screenshot-card" aria-hidden="true">
-                  <img src="./assets/screenshots/screenshot_4.png" alt="" />
-                </figure>
+          <div class="subjects-grid animate-up">
+            <div class="subject-card">
+              <img src="./assets/icons/tck.png" alt="Ceza Hukuku" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Ceza Hukuku</h4>
+                <span>TCK, CMK temel kavramlar</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/anayasa.png" alt="Anayasa Hukuku" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Anayasa Hukuku</h4>
+                <span>Temel hak ve özgürlükler</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/idarehukuku.png" alt="İdare Hukuku" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>İdare Hukuku</h4>
+                <span>Devlet teşkilatı ve işlemleri</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/polismeslek.png" alt="Polis Meslek Mevzuatı" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Polis Meslek Mevzuatı</h4>
+                <span>Emniyet teşkilat kanunu</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/insanhaklari.png" alt="İnsan Hakları" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>İnsan Hakları</h4>
+                <span>AİHM, temel özgürlükler</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/tarih.png" alt="Atatürk İlkeleri & İnkılap" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Atatürk İlkeleri &amp; İnkılap</h4>
+                <span>Tarihsel süreç ve ilkeler</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/protokol.png" alt="Protokol Bilgisi" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Protokol Bilgisi</h4>
+                <span>Devlet protokol kuralları</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/silah.png" alt="Silah Bilgisi" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Silah Bilgisi</h4>
+                <span>Teknik bilgi ve mevzuat</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/ingilizce.png" alt="İngilizce" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>İngilizce</h4>
+                <span>Mesleki İngilizce terimler</span>
+              </div>
+            </div>
+            <div class="subject-card">
+              <img src="./assets/icons/genelkultur.png" alt="Genel Kültür & Analitik" class="subject-card-img" />
+              <div class="subject-card-info">
+                <h4>Genel Kültür &amp; Analitik</h4>
+                <span>Mantık ve genel kültür soruları</span>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="section-block reveal">
-          <div class="section-head">
-            <p class="section-tag">Örnek Kullanıcı Yorumları</p>
-            <h2>Mağaza yorumları arttıkça bu alan gerçek kullanıcı yorumlarıyla güncellenecek.</h2>
-            <p>
-              Bu alanda, kullanıcıların uygulamayla ilgili öne çıkardığı güçlü
-              yönleri yansıtan örnek yorumlar yer alıyor.
-            </p>
+      <!-- ═══════════════════════════ GÜÇLÜ EKRANLAR (KART DÜZENİ) ═══════════════════════════ -->
+      <section class="screens-showcase" id="ekranlar">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Ekranlar</span>
+            <h2>Sınavı kazandıran <span class="text-gold">3 güçlü ekran</span></h2>
+            <p>Performansını ölç, kişisel planını yap ve rakiplerini geride bırak.</p>
           </div>
 
-          <div class="review-grid">
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Murat K.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Ne çözeceğimi aramak yerine doğrudan teste girebiliyorum. En çok
-                zaman kazandıran kısım bu oldu.”
-              </p>
-              <span class="review-note">Hızlı başlangıç odağı</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Ayşe T.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Yanlış soru alanı sayesinde eksiklerim kaybolmuyor. Tekrar düzeni
-                çok daha kontrollü hale geldi.”
-              </p>
-              <span class="review-note">Tekrar düzeni odağı</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Hasan Y.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Analiz ekranı sade ve anlaşılır. Çalışma sonrası gelişimi net
-                şekilde görebiliyorum.”
-              </p>
-              <span class="review-note">İlerleme hissi odağı</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Zeynep A.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Konu konu ilerleme mantığı güzel kurulmuş. Çalışırken dağılmadığım
-                için uygulamayı daha sık açıyorum.”
-              </p>
-              <span class="review-note">Konu bazlı akış</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Emre B.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Testler ve istatistikler aynı yerde olunca neye ağırlık vermem
-                gerektiği daha net belli oluyor.”
-              </p>
-              <span class="review-note">Net analiz deneyimi</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Fatma D.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Arayüz sade olduğu için dikkat dağıtmıyor. Özellikle soru çözme
-                ve sonuç ekranları çok temiz.”
-              </p>
-              <span class="review-note">Sade arayüz</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Ahmet C.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Premium kısmın konu bazlı açılması güzel. Ne için ödeme yaptığımı
-                açıkça gördüğüm bir yapı var.”
-              </p>
-              <span class="review-note">Premium netliği</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Selin G.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Deneme sonrası süre takibi çok işe yaradı. Hangi konuda yavaş
-                kaldığımı fark etmek kolaylaştı.”
-              </p>
-              <span class="review-note">Süre takibi</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Okan P.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Çalışma düzenini oturtmak isteyen biri için güzel düşünülmüş.
-                Uygulama ne yapacağını gösterdiği için motivasyon kaybı azalıyor.”
-              </p>
-              <span class="review-note">Rutin oluşturma</span>
-            </article>
-            <article class="review-card">
-              <div class="review-top">
-                <strong>Elif N.</strong>
-                <span class="review-stars" aria-label="5 yıldız">★★★★★</span>
-              </div>
-              <p>
-                “Yanlışların tekrar çözülmesi ve performansın görünmesi birlikte
-                olunca uygulama daha profesyonel hissettiriyor.”
-              </p>
-              <span class="review-note">Profesyonel deneyim</span>
-            </article>
-          </div>
-        </section>
+          <div class="screens-grid animate-up">
 
-        <section class="section-block reveal" id="premium">
-          <div class="section-head">
-            <p class="section-tag">Planlar ve Çağrı</p>
-            <h2>Çalışma ritmine uyan planı seç, aynı sistem içinde ilerlemeye devam et.</h2>
-          </div>
+            <!-- ── 1. ANALİZ KARTI ── -->
+            <div class="screen-card">
+              <div class="screen-card-badge">📊 İstatistik &amp; Analiz</div>
+              <div class="screen-card-preview">
+                <div class="mini-phone">
+                  <div class="mini-phone-header">📊 İstatistiklerim</div>
+                  <div class="mini-phone-body">
+                    <div class="mini-gauge">
+                      <svg viewBox="0 0 120 70" width="120" height="70">
+                        <path d="M10 65 A50 50 0 0 1 110 65" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M10 65 A50 50 0 0 1 92 25" fill="none" stroke="url(#gaugeGrad)" stroke-width="10" stroke-linecap="round"/>
+                        <defs><linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C5A059"/><stop offset="100%" stop-color="#2C5D8A"/></linearGradient></defs>
+                      </svg>
+                      <div class="gauge-label">%74</div>
+                      <div class="gauge-sub">Genel Başarı</div>
+                    </div>
+                    <div class="mini-stat-grid">
+                      <div class="ms-item green"><span>Doğru</span><strong>847</strong></div>
+                      <div class="ms-item red"><span>Yanlış</span><strong>203</strong></div>
+                      <div class="ms-item gray"><span>Boş</span><strong>96</strong></div>
+                      <div class="ms-item blue"><span>Sınav</span><strong>42</strong></div>
+                    </div>
+                    <div class="mini-category-bars">
+                      <div class="mcb-item"><span>Ceza Hukuku</span><div class="mcb-bar"><div class="mcb-fill" style="width:82%"></div></div><span class="mcb-pct">82%</span></div>
+                      <div class="mcb-item"><span>Anayasa</span><div class="mcb-bar"><div class="mcb-fill" style="width:71%"></div></div><span class="mcb-pct">71%</span></div>
+                      <div class="mcb-item"><span>İdare Hukuku</span><div class="mcb-bar"><div class="mcb-fill" style="width:65%"></div></div><span class="mcb-pct">65%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-card-content">
+                <h3>Analiz Ekranı</h3>
+                <p>Başarını detaylı göstergeler ve grafiklerle takip et.</p>
+                <ul class="screen-card-list">
+                  <li>✓ Ders bazlı doğru/yanlış/boş oranları</li>
+                  <li>✓ Genel başarı göstergesi (Gauge grafik)</li>
+                  <li>✓ Bulut senkronizasyonu ve yedekleme</li>
+                  <li>✓ Karma test özel başarı istatistikleri</li>
+                </ul>
+              </div>
+            </div>
 
-          <div class="pricing-grid">
-            <article class="price-card price-card-featured">
-              <p class="plan-name">Yıllık</p>
-              <strong>En dengeli ritim</strong>
-              <span>Uzun soluklu hazırlıkta istikrar kurmak isteyenler için ideal.</span>
-              <ul class="feature-list">
-                <li>Tam premium çalışma sistemi</li>
-                <li>Düzenli tekrar altyapısı</li>
-                <li>En güçlü fiyat/ritim dengesi</li>
+            <!-- ── 2. PLANIM KARTI ── -->
+            <div class="screen-card screen-card-featured">
+              <div class="screen-card-badge gold-badge">🤖 AI Destekli Planım</div>
+              <div class="screen-card-preview">
+                <div class="mini-phone">
+                  <div class="mini-phone-header">📋 Planım</div>
+                  <div class="mini-phone-body">
+                    <div class="plan-suggestion">
+                      <div class="ps-icon">🤖</div>
+                      <div class="ps-content">
+                        <div class="ps-title">Zayıf Ders Odağı</div>
+                        <div class="ps-text">İdare Hukuku'na öncelik ver</div>
+                      </div>
+                      <div class="ps-arrow">→</div>
+                    </div>
+                    <div class="plan-daily-target">
+                      <div class="pdt-header">
+                        <span>🎯 Günlük Hedef</span>
+                        <strong>15/20 soru</strong>
+                      </div>
+                      <div class="pdt-bar"><div class="pdt-fill" style="width:75%"></div></div>
+                      <div class="pdt-footer">%75 tamamlandı · 5 soru kaldı</div>
+                    </div>
+                    <div class="plan-suggestion">
+                      <div class="ps-icon">🔄</div>
+                      <div class="ps-content">
+                        <div class="ps-title">Yanlış Tekrar</div>
+                        <div class="ps-text">23 yanlış soru tekrar bekliyor</div>
+                      </div>
+                      <div class="ps-arrow">→</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-card-content">
+                <h3>Planım Ekranı</h3>
+                <p>Kişisel çalışma önerileri ile her gün ne yapacağını bil.</p>
+                <ul class="screen-card-list">
+                  <li>✓ Zayıf ders odağı ve soru tavsiyeleri</li>
+                  <li>✓ Günlük soru hedefi ve ilerleme çubuğu</li>
+                  <li>✓ Yanlış soru havuzu doğrudan erişimi</li>
+                  <li>✓ Son 3 test ortalaması trend analizi</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- ── 3. LİDERLİK KARTI ── -->
+            <div class="screen-card">
+              <div class="screen-card-badge">🏆 Liderlik Tablosu</div>
+              <div class="screen-card-preview">
+                <div class="mini-phone">
+                  <div class="mini-phone-header">🏆 Liderlik Tablosu</div>
+                  <div class="mini-phone-body">
+                    <div class="lb-tabs">
+                      <span class="lb-tab active">Haftalık</span>
+                      <span class="lb-tab">Aylık</span>
+                      <span class="lb-tab">Genel</span>
+                    </div>
+                    <div class="lb-timer">⏱ Kalan: 2g 14s 32d</div>
+                    <div class="lb-podium">
+                      <div class="lb-user lb-silver">
+                        <div class="lb-avatar">👨</div>
+                        <span class="lb-medal">🥈</span>
+                        <div class="lb-name">Mehmet</div>
+                        <div class="lb-score">%89</div>
+                      </div>
+                      <div class="lb-user lb-gold">
+                        <div class="lb-avatar">👩</div>
+                        <span class="lb-medal">🥇</span>
+                        <div class="lb-name">Ayşe</div>
+                        <div class="lb-score">%94</div>
+                      </div>
+                      <div class="lb-user lb-bronze">
+                        <div class="lb-avatar">👨‍✈️</div>
+                        <span class="lb-medal">🥉</span>
+                        <div class="lb-name">Ali</div>
+                        <div class="lb-score">%85</div>
+                      </div>
+                    </div>
+                    <div class="lb-my-rank">
+                      <span class="lb-my-pos">#12</span>
+                      <span class="lb-my-name">Sen</span>
+                      <span class="lb-my-score">%74</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-card-content">
+                <h3>Liderlik Ekranı</h3>
+                <p>Haftalık ve aylık sıralamalarda rakiplerinle yarış.</p>
+                <ul class="screen-card-list">
+                  <li>✓ Haftalık, aylık ve genel zaman aralıkları</li>
+                  <li>✓ Podyum (Top 3) özel profil çerçeveleri</li>
+                  <li>✓ Kesin sıra ve puan görünümü</li>
+                  <li>✓ İlk 3 derecede kutlama animasyonu</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ NASIL ÇALIŞIR ═══════════════════════════ -->
+      <section class="how-it-works">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Sistem</span>
+            <h2>3 adımda <span class="text-gold">sınava hazır</span></h2>
+          </div>
+          <div class="steps-grid animate-up">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>Kategori Seç</h3>
+                <p>Çalışmak istediğin dersi ve konuyu seç. Konu bazlı ilerleyerek boşluklarını tespit et.</p>
+              </div>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>Çöz &amp; Tekrar Et</h3>
+                <p>Soruları çöz. Yanlışlar otomatik olarak tekrar havuzuna düşer. Açıklamalarla öğren.</p>
+              </div>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3>Analiz Et &amp; İlerle</h3>
+                <p>Performansını gör. Zayıf alanları güçlendir. Liderlik tablosunda sıranı takip et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ PREMIUM ═══════════════════════════ -->
+      <section class="premium" id="premium">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Planlar</span>
+            <h2>Sınavınıza uygun <span class="text-gold">plan seçin</span></h2>
+            <p>Ücretsiz başla, hazır olduğunda premium'a geç. İstediğin zaman iptal et.</p>
+          </div>
+          <div class="plans-grid animate-up">
+
+            <!-- Yıllık Plan - En Popüler -->
+            <div class="plan-card plan-annual plan-popular">
+              <div class="plan-badge">🏆 En Popüler</div>
+              <div class="plan-header">
+                <div class="plan-icon">🎯</div>
+                <h3>Yıllık Plan</h3>
+                <p class="plan-subtitle">14 gün ücretsiz deneme imkanı</p>
+              </div>
+              <div class="plan-price">
+                <span class="price-original">₺3.588 / yıl</span>
+                <span class="price-amount">₺599</span>
+                <span class="price-period">/ yıl</span>
+                <span class="price-saving">%83 tasarruf!</span>
+              </div>
+              <ul class="plan-features">
+                <li>✓ <strong>9.000+ Tüm Soru Bankalarına Tam Erişim</strong></li>
+                <li>✓ <strong>14 Gün Ücretsiz Deneme</strong></li>
+                <li>✓ Yanlış Soru Tekrar Havuzu</li>
+                <li>✓ Gerçek Zamanlı Deneme Sınavları</li>
+                <li>✓ Flash Card Ezber Kartları &amp; PDF Notlar</li>
+                <li>✓ AI Destekli Çalışma Planım Ekranı</li>
+                <li>✓ Haftalık &amp; Aylık Liderlik Tablosu</li>
+                <li>✓ İstediğin zaman tek tıkla iptal</li>
               </ul>
-            </article>
-            <article class="price-card">
-              <p class="plan-name">Sınırsız</p>
-              <strong>Tek seferde kalıcı erişim</strong>
-              <span>Zaman baskısını azaltıp sürekli kullanım rahatlığı isteyenler için.</span>
-              <ul class="feature-list">
-                <li>Uzun dönem kullanım mantığı</li>
-                <li>Tek seferlik karar modeli</li>
-                <li>Kalıcı erişim yaklaşımı</li>
+              <a href="#indir" class="btn btn-primary plan-btn">14 Gün Ücretsiz Dene</a>
+            </div>
+
+            <!-- Sınırsız Plan -->
+            <div class="plan-card plan-lifetime">
+              <div class="plan-badge plan-badge-diamond">💎 Sınırsız / Ömür Boyu</div>
+              <div class="plan-header">
+                <div class="plan-icon">♾️</div>
+                <h3>Sınırsız Plan</h3>
+                <p class="plan-subtitle">Tek seferlik ödeme, abonelik yok</p>
+              </div>
+              <div class="plan-price">
+                <span class="price-amount">₺1.759</span>
+                <span class="price-period">/ tek seferlik</span>
+              </div>
+              <ul class="plan-features">
+                <li>✓ <strong>Tüm İçeriklere Ömür Boyu Süresiz Erişim</strong></li>
+                <li>✓ <strong>Tek Seferlik Ödeme (Abonelik Yok)</strong></li>
+                <li>✓ Otomatik Yenileme Yok, İptal Derdi Yok</li>
+                <li>✓ 9.000+ Soru, Tüm Güncellemeler Ücretsiz</li>
+                <li>✓ Yanlış Tekrar, Denemeler &amp; Flash Card'lar</li>
+                <li>✓ AI Planım &amp; Gelişmiş İstatistikler</li>
+                <li>✓ Özel "Sınırsız Üye" Rozeti ve Çerçevesi</li>
+                <li>✓ Komiserlik Kariyerin Boyunca Yanında</li>
               </ul>
-            </article>
-          </div>
-        </section>
+              <a href="#indir" class="btn btn-gold plan-btn">Sınırsız Erişimi Al</a>
+            </div>
 
-        <section class="section-block reveal" id="sss">
-          <div class="section-head">
-            <p class="section-tag">Sık Sorulan Sorular</p>
-            <h2>Karar vermeden önce en sık merak edilen başlıkları burada topladık.</h2>
           </div>
+          <p class="plans-note">Tüm planlar uygulama içinden satın alınır. App Store veya Google Play hesabınız üzerinden işlem yapılır.</p>
+        </div>
+      </section>
 
-          <div class="faq-grid">
-            <details class="faq-item">
-              <summary>Uygulama hangi sınavlar için uygun?</summary>
-              <p>
-                Komiser Yardımcılığı ve Misyon Koruma sınavları başta olmak üzere,
-                hukuk temelli hazırlık süreçleri için optimize edilmiştir.
-              </p>
-            </details>
-            <details class="faq-item">
-              <summary>Premium erişim neleri kapsıyor?</summary>
-              <p>
-                Konu bazlı test akışları, gelişmiş analizler, yanlış soru tekrar
-                alanı ve daha derin çalışma ekranlarına tam erişim sağlar.
-              </p>
-            </details>
-            <details class="faq-item">
-              <summary>İçerikler düzenli olarak güncelleniyor mu?</summary>
-              <p>
-                Mevzuat ve sınav düzeni takip edilerek içerikler düzenli aralıklarla
-                yenilenir; kullanıcı yeni test ve duyurulara uygulama içinden ulaşır.
-              </p>
-            </details>
-            <details class="faq-item">
-              <summary>Aboneliğimi dilediğim zaman iptal edebilir miyim?</summary>
-              <p>
-                Evet. App Store veya Google Play hesap ayarlarından abonelik her zaman
-                yönetilebilir ve iptal edilebilir.
-              </p>
-            </details>
+      <!-- ═══════════════════════════ UYGULAMA EKRANLARI GALERİSİ ═══════════════════════════ -->
+      <section class="gallery-showcase" id="galeri">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Uygulama İçi Ekranlar</span>
+            <h2>Modern ve kolay <span class="text-gold">kullanıcı arayüzü</span></h2>
+            <p>Sınav hazırlık sürecini sade, hızlı ve etkili kılan uygulama içi ekranlarımız.</p>
           </div>
-        </section>
+          <div class="gallery-grid animate-up">
+            <div class="gallery-card">
+              <div class="gallery-phone-frame">
+                <img src="./assets/screenshots/screenshot_5.png" alt="Ana Ekran ve Konu Akışı" />
+              </div>
+              <span class="gallery-caption">Ana Ekran &amp; Konu Akışı</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-phone-frame">
+                <img src="./assets/screenshots/screenshot_2.png" alt="Soru Çözüm Ekranı" />
+              </div>
+              <span class="gallery-caption">Soru Çözüm &amp; Açıklamalar</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-phone-frame">
+                <img src="./assets/screenshots/screenshot_1.png" alt="Sınav Sonuç Ekranı" />
+              </div>
+              <span class="gallery-caption">Sınav Sonucu &amp; Analiz</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-phone-frame">
+                <img src="./assets/screenshots/screenshot_3.png" alt="İstatistik Ekranı" />
+              </div>
+              <span class="gallery-caption">Performans &amp; İstatistikler</span>
+            </div>
+            <div class="gallery-card">
+              <div class="gallery-phone-frame">
+                <img src="./assets/screenshots/screenshot_4.png" alt="Ders Konu Listesi" />
+              </div>
+              <span class="gallery-caption">Dersler &amp; Konu Listesi</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="support-block reveal" id="destek">
-          <article class="support-card support-card-primary">
-            <p class="section-tag">Hızlı Destek</p>
-            <h2>Herhangi bir sorunda tek mesaj uzağındayız.</h2>
-            <p>
-              Uygulama, üyelik veya içerik hakkında destek almak için Telegram
-              kanalımızdan doğrudan bize ulaşabilirsin.
-            </p>
-            <a
-              class="button button-primary"
-              href="https://t.me/misyon_akademi"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Telegram'a Git
+      <!-- ═══════════════════════════ KULLANICI YORUMLARI ═══════════════════════════ -->
+      <section class="reviews" id="yorumlar">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">Aday Yorumları</span>
+            <h2>Sınava hazırlanan <span class="text-gold">polislerimiz ne diyor?</span></h2>
+            <p>PAEM Komiser Yardımcılığı ve Misyon Koruma sınavına aktif olarak hazırlanan meslektaşlarımızın deneyimleri.</p>
+          </div>
+          <div class="reviews-grid animate-up">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Yaklaşan sınav öncesi dağılmadan ders ders ilerlememi sağladı. 9.000'den fazla güncel soru olması ve nöbette bile rahatça test çözebilmem büyük kolaylık."</p>
+              <div class="review-author">
+                <div class="author-avatar">👮‍♂️</div>
+                <div class="author-info">
+                  <strong>Ahmet Y.</strong>
+                  <span>Polis Memuru · PAEM Sınav Adayı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card review-card-featured">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Sınav hazırlık sürecinde eksiklerimi ve zayıf olduğum dersleri 'Planım' sayfasında anında görmek çalışma verimimi 2 katına çıkardı. Çok başarılı."</p>
+              <div class="review-author">
+                <div class="author-avatar">👮‍♂️</div>
+                <div class="author-info">
+                  <strong>Murat K.</strong>
+                  <span>Polis Memuru · Misyon Koruma Adayı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Yanlış soru tekrar havuzu harika düşünülmüş. Çözdüğüm her yanlış soru havuza düşüyor, sınav gününe kadar sıfır hatayla hazırlanabiliyorum."</p>
+              <div class="review-author">
+                <div class="author-avatar">👮‍♀️</div>
+                <div class="author-info">
+                  <strong>Gökhan S.</strong>
+                  <span>Polis Memuru · PAEM Sınav Adayı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Liderlik tablosundaki haftalık tatlı rekabet her gün düzenli soru çözme alışkanlığı kazandırdı. Teşkilattaki tüm arkadaşlarıma öneriyorum."</p>
+              <div class="review-author">
+                <div class="author-avatar">👮‍♂️</div>
+                <div class="author-info">
+                  <strong>Hakan T.</strong>
+                  <span>Polis Memuru · Misyon Koruma Adayı</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ SSS ═══════════════════════════ -->
+      <section class="faq" id="sss">
+        <div class="container">
+          <div class="section-header animate-up">
+            <span class="section-tag">SSS</span>
+            <h2>Sık sorulan <span class="text-gold">sorular</span></h2>
+          </div>
+          <div class="faq-list animate-up">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Ücretsiz sürüm ne kadar kullanışlı?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Ücretsiz sürümde temel kategorilerdeki sorulara, günlük quiz'e ve sınav geçmişinize erişebilirsiniz. Premium'a geçerek tüm 4.000+ soruya, yanlış tekrar havuzuna, deneme sınavlarına ve flash kartlara ulaşabilirsiniz.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Aylık aboneliği istediğim zaman iptal edebilir miyim?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Evet. Aboneliğinizi App Store veya Google Play üzerinden istediğiniz zaman iptal edebilirsiniz. İptal etseniz bile mevcut dönemin sonuna kadar premium özelliklerinden yararlanmaya devam edersiniz.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Sorular ne sıklıkla güncelleniyor?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Soru bankası düzenli olarak güncellenmektedir. Mevzuat değişiklikleri, yeni çıkan sorular ve güncel gelişmeler eklenmeye devam etmektedir. Premium kullanıcılar tüm güncellemelerden otomatik olarak yararlanır.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Ömür boyu plan ne anlama geliyor?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Ömür boyu plan tek seferlik bir satın alımdır, abonelik değildir. Bir kez ödeme yaptıktan sonra uygulamaya ömür boyu sınırsız erişim hakkı kazanırsınız. Otomatik yenileme yoktur, hiçbir zaman ek ücret kesilmez.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Uygulama hangi platformlarda çalışıyor?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Misyon Akademi hem iOS (iPhone) hem Android cihazlarda çalışmaktadır. Aynı hesapla her iki platformda da kullanabilirsiniz. Verileriniz otomatik olarak buluta senkronize edilir.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Deneme süresi bitince ücret alınır mı?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Aylık planda 7 gün, yıllık planda 14 gün ücretsiz deneme sunulmaktadır. Deneme süresi bitmeden iptal ederseniz herhangi bir ücret alınmaz. İptal etmezseniz ilgili dönem ücreti otomatik olarak tahsil edilir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ CTA BOTTOM ═══════════════════════════ -->
+      <section class="cta-bottom">
+        <div class="container cta-inner animate-up">
+          <div class="cta-glow"></div>
+          <img src="./assets/icons/logo.png" alt="Misyon Akademi" class="cta-logo" />
+          <h2>Hazırlığını bugün <span class="text-gold">sisteme al</span></h2>
+          <p>Dağılmadan, ölçerek, planlayarak çalış. Komiserlik kariyerin seni bekliyor.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-store" href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055" target="_blank" rel="noreferrer" id="btn-appstore-bottom">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store'dan İndir
             </a>
-          </article>
-
-          <article class="support-card">
-            <p class="section-tag">Topluluk</p>
-            <h3>Sosyal Kanallar</h3>
-            <div class="support-links">
-              <a href="https://instagram.com/misyon_akademi" target="_blank" rel="noreferrer">Instagram</a>
-              <a href="https://t.me/misyon_akademi" target="_blank" rel="noreferrer">Telegram</a>
-            </div>
-          </article>
-
-          <article class="support-card">
-            <p class="section-tag">Yasal Bilgiler</p>
-            <h3>Belgeler</h3>
-            <div class="support-links">
-              <a href="https://soru-f70f0.web.app/privacy-policy.html" target="_blank" rel="noreferrer">Gizlilik Politikası</a>
-              <a href="https://soru-f70f0.web.app/terms-of-service.html" target="_blank" rel="noreferrer">Kullanım Koşulları</a>
-              <a href="https://t.me/misyon_akademi" target="_blank" rel="noreferrer">Destek Sayfası</a>
-            </div>
-          </article>
-        </section>
-      </main>
-
-      <footer class="site-footer reveal">
-        <div>
-          <strong>Misyon Akademi</strong>
-          <p>
-            Komiserlik ve Misyon Koruma sınavlarına hazırlık için daha okunur,
-            daha güven veren ve daha sistemli bir çalışma deneyimi.
-          </p>
+            <a class="btn btn-secondary btn-store" href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&hl=tr" target="_blank" rel="noreferrer" id="btn-playstore-bottom">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3,20.5v-17c0-0.83,0.94-1.3,1.6-0.8l14,8.5c0.6,0.36,0.6,1.24,0,1.6l-14,8.5C3.94,21.8,3,21.33,3,20.5z"/></svg>
+              Google Play'den İndir
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div class="footer-actions">
-          <a
-            class="button button-secondary button-store"
-            href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img class="button-icon" src="./assets/icons/apple-store-icon.svg" alt="" aria-hidden="true" />
-            App Store
-          </a>
-          <a
-            class="button button-primary button-store"
-            href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&amp;hl=tr"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img class="button-icon" src="./assets/icons/google-play-icon.svg" alt="" aria-hidden="true" />
-            Google Play
-          </a>
+    </main>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/icons/logo.png" alt="Misyon Akademi" class="footer-logo" />
+          <div>
+            <strong>Misyon Akademi</strong>
+            <p>Komiserlik ve Misyon Koruma<br/>Hazırlık Platformu</p>
+          </div>
         </div>
-      </footer>
-    </div>
-
-    <button class="back-to-top" type="button" aria-label="Başa dön">
-      <span aria-hidden="true">↑</span>
-    </button>
-
-    <div class="mobile-cta">
-      <a
-        class="button button-primary button-store"
-        href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img class="button-icon" src="./assets/icons/apple-store-icon.svg" alt="" aria-hidden="true" />
-        App Store
-      </a>
-      <a
-        class="button button-secondary button-store"
-        href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&amp;hl=tr"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img class="button-icon" src="./assets/icons/google-play-icon.svg" alt="" aria-hidden="true" />
-        Google Play
-      </a>
-    </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Uygulama</h4>
+            <a href="#ozellikler">Özellikler</a>
+            <a href="#dersler">Dersler</a>
+            <a href="#premium">Premium</a>
+            <a href="#sss">SSS</a>
+          </div>
+          <div class="footer-col">
+            <h4>İndir</h4>
+            <a href="https://apps.apple.com/us/app/komiserlik-misyon-koruma/id6760534055" target="_blank" rel="noreferrer">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.misyonakademi.paem&hl=tr" target="_blank" rel="noreferrer">Google Play</a>
+          </div>
+          <div class="footer-col">
+            <h4>Yasal</h4>
+            <a href="./privacy-policy.html">Gizlilik Politikası</a>
+            <a href="./terms-of-service.html">Kullanım Şartları</a>
+            <a href="./delete-account.html">Hesap Silme</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Misyon Akademi. Tüm hakları saklıdır.</p>
+          <p>Komiser Yardımcılığı &amp; Misyon Koruma Sınav Hazırlık Uygulaması</p>
+        </div>
+      </div>
+    </footer>
 
     <script>
-      const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-      ).matches;
-      const backToTopButton = document.querySelector(".back-to-top");
+      // ── Navbar scroll effect ──
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+      });
 
-      if (!prefersReducedMotion) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("reveal-visible");
-              }
-            });
-          },
-          { threshold: 0.14 }
-        );
+      // ── Hamburger menu ──
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      hamburger.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('active', open);
+        hamburger.setAttribute('aria-expanded', open);
+      });
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          hamburger.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', false);
+        });
+      });
 
-        document.querySelectorAll(".reveal").forEach((element) => {
-          observer.observe(element);
+      // ── FAQ accordion ──
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+          document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', false));
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', true);
+          }
         });
-      } else {
-        document.querySelectorAll(".reveal").forEach((element) => {
-          element.classList.add("reveal-visible");
-        });
-      }
+      });
 
-      if (backToTopButton) {
-        backToTopButton.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: prefersReducedMotion ? "auto" : "smooth",
-          });
+      // ── Intersection Observer for animations ──
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
         });
-      }
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
+
+      // ── Smooth scroll ──
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
     </script>
   </body>
 </html>
