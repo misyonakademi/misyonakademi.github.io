@@ -93,6 +93,7 @@
           <div><strong>11</strong><span>Ders alanı</span></div>
           <div><strong>5.000+</strong><span>Aktif kullanıcı</span></div>
           <div><strong>4.7 / 5</strong><span>Kullanıcı puanı</span></div>
+          <div class="premium-daily"><strong id="dailyPremiumCount">10</strong><span>Bugün yeni Premium üye</span></div>
         </div>
       </section>
 
@@ -297,6 +298,14 @@
       const header = document.getElementById('siteHeader');
       const menuButton = document.getElementById('menuButton');
       const mobileNav = document.getElementById('mobileNav');
+      const dailyPremiumCount = document.getElementById('dailyPremiumCount');
+
+      const premiumRotation = [10, 7, 5, 8, 6, 9];
+      const today = new Date();
+      const simulationStart = new Date(2026, 8, 5);
+      const elapsedDays = Math.floor((new Date(today.getFullYear(), today.getMonth(), today.getDate()) - simulationStart) / 86400000);
+      const rotationIndex = ((elapsedDays % premiumRotation.length) + premiumRotation.length) % premiumRotation.length;
+      dailyPremiumCount.textContent = premiumRotation[rotationIndex];
 
       window.addEventListener('scroll', () => header.classList.toggle('is-scrolled', window.scrollY > 16), { passive: true });
       menuButton.addEventListener('click', () => {
