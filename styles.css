@@ -75,6 +75,7 @@ em { font-style: normal; color: var(--blue-bright); }
 .store-button:hover { box-shadow: 0 16px 36px rgba(0,0,0,.2); }
 .store-button svg { width: 25px; height: 25px; fill: currentColor; flex: 0 0 auto; }
 .store-button .store-icon { width: 34px; height: 34px; flex: 0 0 auto; object-fit: contain; }
+.store-button .store-icon-play { width: 42px; height: 42px; margin: -4px; }
 .store-button span { display: grid; line-height: 1.08; font-size: 1rem; font-weight: 700; }
 .store-button small { margin-bottom: 3px; font-size: .63rem; font-weight: 500; opacity: .72; }
 .store-button-white { color: var(--ink); background: var(--white); }
