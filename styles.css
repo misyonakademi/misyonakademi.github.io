@@ -74,6 +74,7 @@ em { font-style: normal; color: var(--blue-bright); }
 .store-button { min-width: 188px; min-height: 60px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 10px 20px; border: 1px solid transparent; border-radius: 14px; cursor: pointer; transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .store-button:hover { box-shadow: 0 16px 36px rgba(0,0,0,.2); }
 .store-button svg { width: 25px; height: 25px; fill: currentColor; flex: 0 0 auto; }
+.store-button .store-icon { width: 34px; height: 34px; flex: 0 0 auto; object-fit: contain; }
 .store-button span { display: grid; line-height: 1.08; font-size: 1rem; font-weight: 700; }
 .store-button small { margin-bottom: 3px; font-size: .63rem; font-weight: 500; opacity: .72; }
 .store-button-white { color: var(--ink); background: var(--white); }
@@ -90,7 +91,9 @@ em { font-style: normal; color: var(--blue-bright); }
 .floating-card { position: absolute; z-index: 3; display: grid; min-width: 135px; padding: 14px 18px; border: 1px solid rgba(255,255,255,.34); border-radius: 16px; color: var(--ink); background: rgba(255,255,255,.94); box-shadow: 0 18px 38px rgba(0,0,0,.22); backdrop-filter: blur(12px); }
 .floating-card span { color: var(--brand); font-family: "Manrope"; font-size: 1.25rem; font-weight: 800; }
 .floating-card small { color: var(--muted); font-size: .72rem; }
-.floating-score { top: 60px; left: -2px; }
+.floating-score { top: 18px; left: -34px; display: flex; align-items: baseline; gap: 6px; min-width: 0; padding: 7px 11px; border-radius: 999px; box-shadow: 0 10px 24px rgba(0,0,0,.16); }
+.floating-score span { font-size: .94rem; }
+.floating-score small { font-size: .62rem; white-space: nowrap; }
 .floating-users { right: 0; bottom: 40px; }
 
 .metrics { position: relative; z-index: 5; margin-top: -2px; border-bottom: 1px solid var(--line); background: var(--white); }
@@ -100,7 +103,8 @@ em { font-style: normal; color: var(--blue-bright); }
 .metric-grid strong { color: var(--brand); font-family: "Manrope"; font-size: 1.8rem; letter-spacing: -.03em; }
 .metric-grid span { color: var(--muted); font-size: .82rem; }
 .metric-grid .premium-daily { background: var(--ice-2); }
-.metric-grid .premium-daily strong { color: var(--blue); }
+.premium-daily-label { display: flex; align-items: baseline; justify-content: center; gap: .32rem; margin: 0; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+.metric-grid .premium-daily strong { color: #16a34a; }
 
 .section { padding: 116px 0; }
 .section-heading { max-width: 700px; margin-bottom: 58px; }
@@ -214,7 +218,7 @@ em { font-style: normal; color: var(--blue-bright); }
 .download-actions { display: grid; gap: 12px; min-width: 210px; }
 
 .site-footer { padding: 70px 0 28px; color: #b4c1e5; background: var(--ink); }
-.footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 60px; padding-bottom: 55px; }
+.footer-grid { display: grid; grid-template-columns: 2fr repeat(4, 1fr); gap: 48px; padding-bottom: 55px; }
 .footer-brand { display: flex; gap: 15px; }
 .footer-brand img { width: 58px; height: 58px; object-fit: contain; }
 .footer-brand strong, .footer-grid > div > strong { display: block; margin-bottom: 16px; color: var(--white); font-family: "Manrope"; }
@@ -284,7 +288,7 @@ em { font-style: normal; color: var(--blue-bright); }
   .poster-back { width: 176px; right: 3%; }
   .floating-card { min-width: 112px; padding: 10px 13px; }
   .floating-card span { font-size: 1rem; }
-  .floating-score { left: 0; top: 32px; }
+  .floating-score { left: -4px; top: 5px; min-width: 0; padding: 6px 9px; }
   .floating-users { right: 0; bottom: 15px; }
   .metric-grid { grid-template-columns: repeat(2, 1fr); }
   .metric-grid > div { padding: 25px 10px; border-bottom: 1px solid var(--line); }
